@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {auth,provider} from "./config";
 import {signInWithPopup} from "firebase/auth";
-import apple from './apple.png';
 import google from './google.png';
 import Home from "./Home";
 import './SignIn.css'
@@ -23,37 +22,13 @@ function SignIn(){
 
 return (
     <div>
-        {/* {value?<Home/>:
-        <button onClick={handleClick}>Signin With Google</button>
-        } */}
          <div className="home">
       <div className="name">
         <h1 className="welcome">Welcome</h1>
       </div>
-      <div className="authenticate ">
+      <div className="authenticate">
         <div className="content">
           <h2>Sign in</h2>
-          <span className="span-tag">Sign in to your account</span>
-          <div className="social">
-            <div>
-              <a>
-              {value?navigate('Home'):
-                    <button onClick={handleClick}><img src={google} alt="google" />
-                    <span>Sign in with Google</span></button>
-            }
-                {/* <button className="hover:bg-blue-500 hover:text-white" onClick={handleClick}>
-                <img src={google} alt="google" />
-                <span>Sign in with Google</span>
-                </button> */}
-                </a>
-            </div>
-            <div>
-              <button className="hover:bg-blue-500 hover:text-white">
-                <img src={apple} alt="apple" />
-                <span>Sign in with Apple</span>
-              </button>
-            </div>
-          </div>
           <div className="form">
             <form>
               <div>
@@ -68,6 +43,12 @@ return (
                 Forgot password?
               </a>
               <button className="sign-in-btn">Sign in</button>
+              <a>
+              {value?navigate('Home'):
+                    <button className="googlesignin" onClick={handleClick}><img src={google} alt="google" />
+                    <span>Sign in with Google</span></button>
+              }
+              </a>
             </form>
           </div>
           <p className="register-link">
