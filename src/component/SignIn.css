@@ -55,8 +55,6 @@ body{
 
 .content{
   padding: 5rem;
-  /* width: 40%;  */
-  /* border: 1px solid red;  */
 }
 
 
@@ -67,20 +65,27 @@ body{
   margin-bottom: 0.2rem;
 }
 
-.social{
+.googlesignin{
   display: flex;
   justify-content:center;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 1rem;
-  /* border: 1px solid red; */
+  text-align: center;
   gap:10px;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  color: #fff;
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.social img{
+.googlesignin img{
   width: 20px;
   height: 20px;
-  
 }
 .social button{
   padding: 6px 18px;
@@ -90,7 +95,6 @@ body{
   border-radius: 8px;
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
 
 }
 
@@ -107,10 +111,11 @@ button span{
   background-color: #fff;
   padding: 2rem;
   border-radius: 10px;
+  width: 120%;
 }
 .form input{
   display: block;
-  width: 94%;
+  width: 100%;
   padding: 0.7rem;
   margin-top: 0.4rem;
   border: none;
@@ -156,22 +161,6 @@ a{
 button{
   cursor: pointer;
 }
-@media only screen and (max-width:400px) {
-  .social span{
-    display: none;
-  }
-  .social{
-    display: flex;
-    /* justify-content: space-around; */
-    justify-content: center;
-
-  }
-  .social img{
-    width: 30px;
-    height: 30px;
-  }
-  
-}
 
 @media only screen and (max-width: 768px) {
   .name {
@@ -189,12 +178,6 @@ button{
   .content {
     width: 100%;
     padding: 2rem;
-  }
-
-  .social {
-    gap:10px;
-    align-items: center;
-    justify-content: space-between;
   }
 
   .form input {
