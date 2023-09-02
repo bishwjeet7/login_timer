@@ -43,13 +43,11 @@ return (
                 Forgot password?
               </a>
               <button className="sign-in-btn">Sign in</button>
-              <a>
+            </form>
               {value?navigate('Home'):
                     <button className="googlesignin" onClick={handleClick}><img src={google} alt="google" />
                     <span>Sign in with Google</span></button>
               }
-              </a>
-            </form>
           </div>
           <p className="register-link">
             Dont't have an account? <a href="/">Register here</a>
