@@ -180,6 +180,10 @@ button{
     padding: 2rem;
   }
 
+  .form{
+    width: 100%;
+  }
+
   .form input {
     width: 100%;
   }
